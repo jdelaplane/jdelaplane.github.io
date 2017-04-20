@@ -1,8 +1,13 @@
 body {
 
-    margin: auto;
+    margin: 0;
     width: auto;
     font-family:'Roboto Slab', serif;
+
+}
+
+.main_container {
+  width:100%;
 }
 
 p {
@@ -84,6 +89,71 @@ article p {
     padding-bottom:170px;
     text-align: center;
 }
+
+section {
+  text-align: center;
+  padding:0px;
+  margin: 0;
+}
+
+section img {
+
+  width:250px;
+  height:250px;
+  padding:20px;
+
+
+
+
+}
+
+section li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+
+}
+
+
+
+.section2 {
+  background-color: #E1E0D7;
+  width: auto;
+  height: 300px;
+  margin-bottom: -16px;
+}
+
+
+
+.mypictures img  {
+  float: left;
+  width: 200px;
+  height: 250px;
+  padding: 0;
+  margin: 0;
+  -webkit-filter: sepia(100%); /* Safari */
+    filter: sepia(70%);
+    opacity: 0.7;
+
+
+
+
+}
+
+.mypictures li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer {
+  background-color: gray;
+  width: auto;
+  height: 200px;
+  margin: -20px;
+}
+
 
 span {
   color:yellow;
