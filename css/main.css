@@ -120,44 +120,79 @@ section li {
 .section2 {
   background-color: #E1E0D7;
   width: auto;
-  height: 300px;
+  height: 500px;
   margin-bottom: -16px;
+  text-align: center;
+}
+
+.section2 img {
+  height: 100px;
+  width:100px;
+  padding: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.section2 p {
+
+
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  padding-top: 50px;
+}
+
+.mypictures {
+
+  position: relative;
+
+}
+
+h2 {
+   position: absolute;
+   top: 200px;
+   left: 500px;
+   text-align: center;
+
+}
+
+h2 span {
+   color: white;
+   font: bold 48px/90px 'Lato', sans-serif;;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.5);
+   padding: 10px;
 }
 
 
 
 .mypictures img  {
-  float: left;
-  width: 200px;
-  height: 250px;
-  padding: 0;
-  margin: 0;
+
+  width: 1800px;
+  height: 550px;
+
   -webkit-filter: sepia(100%); /* Safari */
     filter: sepia(70%);
     opacity: 0.7;
-
-
-
-
 }
 
 .mypictures li {
+
   list-style: none;
   text-decoration: none;
   display: inline-block;
 }
 
 footer {
-  background-color: gray;
-  width: auto;
-  height: 200px;
-  margin: -20px;
+
+
 }
 
 
 span {
   color:yellow;
 }
+
 
 
 @media screen and (max-width: 960px) {
@@ -178,39 +213,104 @@ span {
 
 }
 
-
-
-
-/* Style The Dropdown Button */
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
     position: relative;
-    display: inline-block;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../images/bgimg.jpg) no-repeat center center
 }
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+.view-second img {
+	transition: all 0.2s ease-in;
+}
+.view-second .mask {
+	background-color: rgba(115,146,184, 0.7);
+	width: 300px;
+    padding: 60px;
+	height: 300px;
+	opacity: 0;
+	transform: translate(265px, 145px) rotate(45deg);
+	transition: all 0.2s ease-in-out;
+}
+.view-second h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    margin: 20px 40px 0px 40px;
+    transform: translate(200px, -200px);
+	transition: all 0.2s ease-in-out;
+}
+.view-second p {
+	transform: translate(-200px, 200px);
+	transition: all 0.2s ease-in-out;
+}
+.view-second a.info {
+    transform: translate(0px, 100px);
+	transition: all 0.2s 0.1s ease-in-out;
+}
+
+.view-second:hover .mask {
+	opacity:1;
+	transform: translate(-80px, -125px) rotate(45deg);
+}
+.view-second:hover h2 {
+	transform: translate(0px,0px);
+	transition-delay: 0.3s;
+}
+.view-second:hover p {
+    transform: translate(0px,0px);
+	transition-delay: 0.4s;
+}
+.view-second:hover a.info {
+	transform: translate(0px,0px);
+	transition-delay: 0.5s;
 }
