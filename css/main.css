@@ -379,3 +379,16 @@ section img {
 	transform: translate(0px,0px);
 	transition-delay: 0.5s;
 }
+
+.aboutMe {
+  height: 150px;
+}
+
+.aboutMe p {
+  border-bottom: 1px solid grey;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  text-align: left;
+
+}
