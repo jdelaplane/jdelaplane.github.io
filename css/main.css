@@ -381,6 +381,7 @@ section img {
 	transition-delay: 0.5s;
 }
 
+<<<<<<< HEAD
 .demo-2 {
     position:relative;
     width:300px;
@@ -427,4 +428,17 @@ section img {
 h2.zero,p.zero {
     margin:0;
     padding:0
+=======
+.aboutMe {
+  height: 150px;
+}
+
+.aboutMe p {
+  border-bottom: 1px solid grey;
+  font-size: 25px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+  text-align: left;
+
+>>>>>>> origin/master
 }
